@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050508">
+  <meta name="description" content="Micco's portfolio.">
+
+  <title>Mics Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="Go to homepage">
+      mics<span>.</span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="nav-links"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-cta" href="#contact">
+      Let's connect <span>↗</span>
+    </a>
+  </header>
+
+  <main class="container" id="home">
+
+    <!-- HERO -->
+    <section class="hero glass reveal">
+      <div class="hero-copy">
+        <div class="availability">
+          <span class="status-dot"></span>
+          COMPUTER ENGINEERING STUDENT
+        </div>
+
+        <p class="hero-kicker">SUP, I'M MICS</p>
+
+        <p class="hero-description">
+          Curious about who's behind the code? Take a look around and
+          get to know me, my interests, and the things I love creating.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore projects <span>↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#about">
+            More about me <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><i class="meta-line"></i>Aspiring Game Developer</span>
+          <span><i class="meta-line"></i>Code. Create. Improve.</span>
+          <span><i class="meta-line"></i>Ready Player Dev.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="photo-shell">
+          <img
+            src="./images/2.png"
+            alt="img"
+            class="profile-image"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+          >
+
+          <div class="photo-placeholder">
+            <span class="placeholder-icon">Mics<span>.</span></span>
+          </div>
+        </div>
+
+        <div class="visual-caption"></div>
+      </div>
+
+      <div class="hero-grid-glow"></div>
+    </section>
+
+    <!-- SECTION LABEL -->
+    <section class="section-label reveal">
+      <span>GET TO KNOW ME</span>
+      <span class="label-rule"></span>
+      <span class="label-note">BEYOND THE SCREEN</span>
+    </section>
+
+    <!-- BENTO GRID -->
+    <section class="bento-grid">
+
+      <!-- ABOUT ME -->
+      <article class="card glass about-card reveal" id="about">
+        <div class="card-topline">
+          <span class="card-index"></span>
+          <span class="card-icon">◈</span>
+        </div>
+
+        <p class="eyebrow">BEHIND THE CODE</p>
+
+        <h2>
+
+          <span class="soft-gradient">Always Exploring.</span>
+        </h2>
+
+        <p class="muted">
+          Hi, I'm John Micco Maniquis, a Computer Engineering student at
+          ICCT Colleges in Cainta, Rizal. I enjoy exploring technology,
+          experimenting with new ideas, and building applications through
+          personal projects. I'm also interested in PC troubleshooting,
+          hardware repair, and reverse engineering to understand how
+          systems and devices work. I learn by solving problems, exploring
+          new technologies, and turning ideas into something meaningful.
+          I'm also part of the ICCT Engineering Society, a school
+          organization, as a Graphics and Technical Committee,
+          where I continue to develop both my creative and technical skills.
+        </p>
+
+        <div class="mini-facts">
+          <div>
+            <span class="fact-mark">⌘</span>
+            <span>Tech &amp; Development</span>
+          </div>
+
+          <div>
+            <span class="fact-mark">⚙</span>
+            <span>Software &amp; Apps</span>
+          </div>
+
+          <div>
+            <span class="fact-mark">⚙</span>
+            <span>System Troubleshooting</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- EDUCATION -->
+      <article class="card glass education-card reveal" id="education">
+        <div class="card-topline">
+          <span class="card-index"></span>
+          <span class="card-icon mint">⌁</span>
+        </div>
+
+        <p class="eyebrow">EDUCATION TIMELINE</p>
+
+        <h2>My Academic Journey.</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot active"></span>
+
+            <div>
+              <span class="timeline-date">CURRENT</span>
+              <h3>Bachelor of Science in Computer Engineering</h3>
+              <p class="muted">ICCT Colleges</p>
+              <p class="timeline-detail">4th Year Level</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+
+            <div>
+              <span class="timeline-date">PREVIOUS</span>
+              <h3>Senior High School</h3>
+              <p class="muted">ICCT Colleges</p>
+              <p class="timeline-detail">STEM</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SKILLS & TOOLKIT -->
+      <article class="card glass skills-card reveal" id="skills">
+        <div class="card-topline">
+          <span class="card-index"></span>
+          <span class="card-icon mint">⌘</span>
+        </div>
+
+        <p class="eyebrow">CORE SKILLS</p>
+
+        <h2>Skill Overview</h2>
+
+        <p class="muted small-copy">
+          An overview of my current skill levels in development.
+        </p>
+
+        <!-- WEB DEVELOPMENT -->
+        <div class="skill-group domain-group">
+          <div class="domain-heading">
+            <span class="skill-label">Web Development</span>
+          </div>
+
+          <div
+            class="skill-track"
+            role="progressbar"
+            aria-label="Web Development"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="45"
+          >
+            <div class="skill-fill web-fill"></div>
+          </div>
+        </div>
+
+        <!-- APP DEVELOPMENT -->
+        <div class="skill-group domain-group">
+          <div class="domain-heading">
+            <span class="skill-label">App Development</span>
+          </div>
+
+          <div
+            class="skill-track"
+            role="progressbar"
+            aria-label="App Development"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="40"
+          >
+            <div class="skill-fill app-fill"></div>
+          </div>
+        </div>
+
+        <!-- DATABASE -->
+        <div class="skill-group domain-group">
+          <div class="domain-heading">
+            <span class="skill-label">Database</span>
+          </div>
+
+          <div
+            class="skill-track"
+            role="progressbar"
+            aria-label="Database"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="25"
+          >
+            <div class="skill-fill database-fill"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECTS -->
+      <article class="card glass projects-card reveal" id="projects">
+        <div class="card-topline">
+          <span class="card-index"></span>
+          <span class="card-icon">▧</span>
+        </div>
+
+        <p class="eyebrow">BUILD LOG</p>
+
+        <div class="projects-heading">
+          <h2>PROJECT SHOWCASE</h2>
+        </div>
+
+        <div class="project-list">
+
+          <!-- RECEISCAN -->
+          <article class="project-item">
+            <div class="project-symbol scan-symbol">▣</div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>ReceiScan</h3>
+                <span class="project-type">ANDROID APP</span>
+              </div>
+
+              <p class="muted">
+                An OCR-based GCash receipt scanning and transaction
+                record management system designed to organize transaction
+                details and reduce manual recordkeeping errors.
+              </p>
+
+              <div class="tags">
+                <span>Dart</span>
+                <span>Flutter</span>
+                <span>Android</span>
+              </div>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/vbsw-mics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label=""
+            >↗</a>
+          </article>
+
+          <!-- ICCT DISCUSSION FORUM -->
+          <article class="project-item">
+            <div class="project-symbol forum-symbol">▤</div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>ICCT Discussion Forum</h3>
+                <span class="project-type">WEB APP</span>
+              </div>
+
+              <p class="muted">
+                A web-based academic discussion platform where ICCT
+                students and community members can share ideas, discuss
+                school-related topics, ask questions, and exchange
+                helpful information.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                 <span>PHP</span>
+                 <span>MySql</span>
+              </div>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/vbsw-mics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ICCT Discussion Forum GitHub link"
+            >↗</a>
+          </article>
+
+          <!--  NBA BUILDER -->
+          <article class="project-item">
+            <div class="project-symbol nba-symbol">◎</div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>NBA Builder</h3>
+                <span class="project-type">ANDROID APP</span>
+              </div>
+
+              <p class="muted">
+                A basketball builder concept for creating custom players
+                and teams, exploring player ratings, simulating NBA
+                seasons, and playing local-versus matchups.
+              </p>
+
+              <div class="tags">
+                <span>Kotlin</span>
+                <span>Jetpack Compose</span>
+                <span>Android</span>
+              </div>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/vbsw-mics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label=""
+            >↗</a>
+          </article>
+
+          <!--  BLOOM FOR YOU -->
+          <article class="project-item">
+            <div class="project-symbol bloom-symbol">✿</div>
+
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Bloom For You</h3>
+                <span class="project-type">WEB GAME</span>
+              </div>
+
+              <p class="muted">
+                A cozy pixel-inspired flower garden game featuring
+                plantable seeds, watering mechanics, collectible flowers,
+                and a personalized garden experience.
+              </p>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+
+            <a
+              class="project-link"
+              href="https://github.com/vbsw-mics/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label=""
+            >↗</a>
+          </article>
+
+        </div>
+      </article>
+
+
+      <!-- CONTACTs -->
+      <article class="card glass information-card reveal" id="contact">
+        <div class="card-topline">
+          <span class="card-index"></span>
+          <span class="card-icon mint">↗</span>
+        </div>
+
+        <p class="eyebrow">REACH OUT</p>
+
+        <h2>
+          Something in mind?<br>
+          <span class="soft-gradient">Let's connect.</span>
+        </h2>
+
+        <p class="muted">
+          Open to learning, collaborating, and connecting with people
+          who enjoy making things with technology.
+        </p>
+
+        <div class="contact-list">
+          <a
+            href="https://github.com/vbsw-mics/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon">⌘</span>
+
+            <span>
+              <small>GITHUB</small>
+              <strong>View my repositories</strong>
+            </span>
+
+            <b>↗</b>
+          </a>
+          <a href="mailto:micoy.maniquis@gmail.com">
+          <span class="contact-icon">✉</span>
+
+          <span>
+         <small>EMAIL</small>
+        <strong>micoy.maniquis@gmail.com</strong>
+       </span>
+
+        <b>↗</b>
+        </a>
+
+          <a
+            href="https://www.linkedin.com/in/john-micco-maniquis-37a4613a5?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-icon">in</span>
+
+            <span>
+              <small>LINKEDIN</small>
+              <strong>Professional profile</strong>
+            </span>
+
+            <b>↗</b>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <a class="logo footer-logo" href="#home">
+        M<span>.</span>
+      </a>
+
+  
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+
+      <span class="copyright">
+        © <span id="year">2026</span> MICS
+      </span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
